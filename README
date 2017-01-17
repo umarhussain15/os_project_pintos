@@ -1,0 +1,17 @@
+Operating Systems
+Pintos Assignment-3
+
+Group Memebers:
+-Umar Hussain 05038
+-Hamza Iqtadar 05700
+-Umer Ahmad Mehtab 05905
+
+
+Run Configuration:
+1-Paths of "kernel.bin" & "loader.bin" are relative.
+2-Path in "pintos-gdb" is absolute 
+3-Compiled with gcc (Ubuntu 4.9.2-0ubuntu1~14.04) 4.9.2 on Linux mint distrubution.
+
+Test Status:
+5/82 failing
+

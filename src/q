@@ -1,0 +1,107 @@
+devices/intq.c:      lock_acquire (&q->lock);
+devices/intq.c:      lock_acquire (&q->lock);
+devices/ide.c:  lock_acquire (&c->lock);
+devices/ide.c:  lock_acquire (&c->lock);
+lib/kernel/console.c:   lock_acquire() implementation that caused the panic, we'll
+lib/kernel/console.c:        lock_acquire (&console_lock); 
+tests/threads/priority-donate-multiple.c:  lock_acquire (&a);
+tests/threads/priority-donate-multiple.c:  lock_acquire (&b);
+tests/threads/priority-donate-multiple.c:  lock_acquire (lock);
+tests/threads/priority-donate-multiple.c:  lock_acquire (lock);
+tests/threads/priority-donate-one.c:  lock_acquire (&lock);
+tests/threads/priority-donate-one.c:  lock_acquire (lock);
+tests/threads/priority-donate-one.c:  lock_acquire (lock);
+tests/threads/priority-donate-sema.c:  lock_acquire (&ls->lock);
+tests/threads/priority-donate-sema.c:  lock_acquire (&ls->lock);
+tests/threads/priority-donate-multiple2.c:  lock_acquire (&a);
+tests/threads/priority-donate-multiple2.c:  lock_acquire (&b);
+tests/threads/priority-donate-multiple2.c:  lock_acquire (lock);
+tests/threads/priority-donate-multiple2.c:  lock_acquire (lock);
+tests/threads/priority-donate-nest.c:  lock_acquire (&a);
+tests/threads/priority-donate-nest.c:  lock_acquire (locks->b);
+tests/threads/priority-donate-nest.c:  lock_acquire (locks->a);
+tests/threads/priority-donate-nest.c:  lock_acquire (lock);
+tests/threads/alarm-wait.c:  lock_acquire (&test.output_lock);
+tests/threads/alarm-wait.c:      lock_acquire (&test->output_lock);
+tests/threads/priority-donate-chain.c:  lock_acquire (&locks[0]);
+tests/threads/priority-donate-chain.c:    lock_acquire (locks->first);
+tests/threads/priority-donate-chain.c:  lock_acquire (locks->second);
+tests/threads/priority-fifo.c:      lock_acquire (data->lock);
+tests/threads/mlfqs-block.c:  lock_acquire (&lock);
+tests/threads/mlfqs-block.c:  lock_acquire (lock);
+tests/threads/priority-condvar.c:      lock_acquire (&lock);
+tests/threads/priority-condvar.c:  lock_acquire (&lock);
+tests/threads/priority-donate-lower.c:  lock_acquire (&lock);
+tests/threads/priority-donate-lower.c:  lock_acquire (lock);
+threads/#thread.c#:  lock_acquire (&tid_lock);
+threads/malloc.c:  lock_acquire (&d->lock);
+threads/malloc.c:          lock_acquire (&d->lock);
+Binary file threads/build/tests/threads/priority-condvar.o matches
+Binary file threads/build/tests/threads/mlfqs-block.o matches
+Binary file threads/build/tests/threads/priority-donate-nest.o matches
+Binary file threads/build/tests/threads/priority-donate-one.o matches
+Binary file threads/build/tests/threads/priority-donate-sema.o matches
+Binary file threads/build/tests/threads/priority-donate-lower.o matches
+Binary file threads/build/tests/threads/priority-fifo.o matches
+Binary file threads/build/tests/threads/priority-donate-multiple.o matches
+Binary file threads/build/tests/threads/priority-donate-chain.o matches
+Binary file threads/build/tests/threads/alarm-wait.o matches
+Binary file threads/build/tests/threads/priority-donate-multiple2.o matches
+Binary file threads/build/kernel.bin matches
+Binary file threads/build/devices/ide.o matches
+Binary file threads/build/devices/intq.o matches
+Binary file threads/build/threads/palloc.o matches
+Binary file threads/build/threads/thread.o matches
+Binary file threads/build/threads/synch.o matches
+Binary file threads/build/threads/malloc.o matches
+Binary file threads/build/kernel.o matches
+Binary file threads/build/lib/kernel/console.o matches
+threads/synch.h:void lock_acquire (struct lock *);
+threads/thread.c:  lock_acquire (&tid_lock);
+Binary file threads/.thread.c.swp matches
+threads/synch.c:lock_acquire (struct lock *lock)
+threads/synch.c:  lock_acquire (lock);
+threads/palloc.c:  lock_acquire (&pool->lock);
+wq:devices/intq.c:      lock_acquire (&q->lock);
+wq:devices/intq.c:      lock_acquire (&q->lock);
+wq:devices/ide.c:  lock_acquire (&c->lock);
+wq:devices/ide.c:  lock_acquire (&c->lock);
+wq:lib/kernel/console.c:   lock_acquire() implementation that caused the panic, we'll
+wq:lib/kernel/console.c:        lock_acquire (&console_lock); 
+wq:tests/threads/priority-donate-multiple.c:  lock_acquire (&a);
+wq:tests/threads/priority-donate-multiple.c:  lock_acquire (&b);
+wq:tests/threads/priority-donate-multiple.c:  lock_acquire (lock);
+wq:tests/threads/priority-donate-multiple.c:  lock_acquire (lock);
+wq:tests/threads/priority-donate-one.c:  lock_acquire (&lock);
+wq:tests/threads/priority-donate-one.c:  lock_acquire (lock);
+wq:tests/threads/priority-donate-one.c:  lock_acquire (lock);
+wq:tests/threads/priority-donate-sema.c:  lock_acquire (&ls->lock);
+wq:tests/threads/priority-donate-sema.c:  lock_acquire (&ls->lock);
+wq:tests/threads/priority-donate-multiple2.c:  lock_acquire (&a);
+wq:tests/threads/priority-donate-multiple2.c:  lock_acquire (&b);
+wq:tests/threads/priority-donate-multiple2.c:  lock_acquire (lock);
+wq:tests/threads/priority-donate-multiple2.c:  lock_acquire (lock);
+wq:tests/threads/priority-donate-nest.c:  lock_acquire (&a);
+wq:tests/threads/priority-donate-nest.c:  lock_acquire (locks->b);
+wq:tests/threads/priority-donate-nest.c:  lock_acquire (locks->a);
+wq:tests/threads/priority-donate-nest.c:  lock_acquire (lock);
+wq:tests/threads/alarm-wait.c:  lock_acquire (&test.output_lock);
+wq:tests/threads/alarm-wait.c:      lock_acquire (&test->output_lock);
+wq:tests/threads/priority-donate-chain.c:  lock_acquire (&locks[0]);
+wq:tests/threads/priority-donate-chain.c:    lock_acquire (locks->first);
+wq:tests/threads/priority-donate-chain.c:  lock_acquire (locks->second);
+wq:tests/threads/priority-fifo.c:      lock_acquire (data->lock);
+wq:tests/threads/mlfqs-block.c:  lock_acquire (&lock);
+wq:tests/threads/mlfqs-block.c:  lock_acquire (lock);
+wq:tests/threads/priority-condvar.c:      lock_acquire (&lock);
+wq:tests/threads/priority-condvar.c:  lock_acquire (&lock);
+wq:tests/threads/priority-donate-lower.c:  lock_acquire (&lock);
+wq:tests/threads/priority-donate-lower.c:  lock_acquire (lock);
+wq:threads/#thread.c#:  lock_acquire (&tid_lock);
+wq:threads/malloc.c:  lock_acquire (&d->lock);
+wq:threads/malloc.c:          lock_acquire (&d->lock);
+wq:threads/synch.h:void lock_acquire (struct lock *);
+wq:threads/thread.c:  lock_acquire (&tid_lock);
+wq:threads/synch.c:lock_acquire (struct lock *lock)
+wq:threads/synch.c:  lock_acquire (lock);
+wq:threads/palloc.c:  lock_acquire (&pool->lock);
